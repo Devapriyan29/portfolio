@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deva's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/054b5b27d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="gryy"></div>
+        <div id="blck"></div>
+
+        <div id="navii">
+        <a href="#about"><p id="navv">About me</p></a>
+        <a href="#skills"><p id="navv">Skills</p></a>
+        <a href="#achievements"><p id="navv">Achievements</p></a>
+        <a href="#contact"><p id="navv">Contact me</p></a>
+        </div>
+        <div id="intro">
+            <p id="hi">Hi, I am</p>
+            <h1 id="namee">Devapriyan V</h1>
+            <p id="carreer">Full Stack Developer</p>
+            <a href="www.linkedin.com/in/devapriyanv" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+            <a href="https://github.com/Devapriyan29" target="_blank"><i class="fa-brands fa-square-github" id="github"></i></i></a>
+        </div>
+
+        <img src="media/professpic-removebg-preview (1).png" id="mypic">
+
+    </div>
+  
+    
+    <div id="about">
+        <center>
+        <h1 id="abb">ABOUT ME</h1><br>
+        
+        <p id="desc">Hello! I'm Devapriyan, a third-year Computer Science Engineering student at PSNA College of Engineering and Technology, with a CGPA of 8.6. I'm passionate about using technology to solve real-world problems and drive innovation. I enjoy working in collaborative environments, especially where I can apply my skills in programming, data structures, and algorithms.
+I’m always eager to learn, stay updated with tech trends, and connect with like-minded individuals. Let’s build something impactful together!</p><br><br>
+        <a href="https://drive.google.com/file/d/1E02OIdNPEfpYGdz8zKGCGtKah2G1-Kdf/view?usp=drive_link" target="_blank"><button id="cvbut">Download CV</button></a>
+        </center>
+        <center><p id="endtag">__________________</p></center>
+    </div>
+
+    <div id="skills">
+        <center>
+        <h1 id="abb">SKILLS</h1><br>
+        </center>
+        <h3 id="skilhead">USING NOW:</h3>
+
+        <div id="pics">
+        <img src="media/pythonlogo.png" id="python">
+        <img src="media/html.png" id="html">
+        <img src="media/css.png" id="css">
+        </div>
+        <div id="capt">
+          <p>Python</p>
+          <p>HTML</p>
+          <p>CSS</p>
+        </div>
+        <br><br>
+
+        <h3 id="skilhead">LEARNING:</h3>
+        <div id="pics2">
+        <img src="media/sql.png" id="html">
+        <img src="media/js.png" id="css">
+        </div>
+        <div id="capt2">
+          <p>SQL</p>
+          <p>Java script</p>
+         
+        
+        
+        </div>
+        
+        <center><p id="endtag">__________________</p></center>
+    </div>
+
+    
+    <div id="achievements">
+        <center>
+        <h1 id="abb">ACHIEVEMENTS</h1><br>
+        </center>
+
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="media/fifty.png" style="width:100%">
+  <div class="text">50 days badge of leetcode</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="media/hundred.png" style="width:100%;">
+  <div class="text">100 days badge of leetcode</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="media/intern.png" style="width:100%">
+  <div class="text1">Internship certificate</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+        
+        <center><p id="endtag">__________________</p></center>
+</div>
+
+
+    <div id="contact">
+        <center>
+          <a href="#header"><i class="fa-solid fa-up-long"></i></a><br>
+          <a href="#header"><p id="topp">Back to top</p></a>
+           <br><br>
+           <a href="www.linkedin.com/in/devapriyanv" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin2"></i></a>
+            <a href="https://github.com/Devapriyan29" target="_blank"><i class="fa-brands fa-square-github" id="github2"></i></i></a>
+            <a href="mailto:devap3784@gmail.com"><i class="fa-solid fa-envelope" id="mail"></i></a>
+        </center>
+        
+       
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
