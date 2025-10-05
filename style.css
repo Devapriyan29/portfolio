@@ -251,7 +251,11 @@ img {vertical-align: middle;}
     padding-top: 30px;
 }
 #topp{
-    color: white;
+    color: rgb(255, 253, 253);
+}
+#sih{
+    width: 50px;
+    height:480px;
 }
 @media screen and (max-width: 1024px) {
     #navii {
@@ -274,7 +278,7 @@ img {vertical-align: middle;}
 
     #intro {
         margin-left: 290px;
-        padding: 20px;
+        margin-bottom: 10px;
         text-align: center;
         
     }
@@ -286,7 +290,7 @@ img {vertical-align: middle;}
     }
 
     #linkedin, #github {
-        font-size: 30px;
+        font-size: 60px;
         padding: 0 10px;
         display: inline-block;
         margin: 10px 0;
@@ -307,12 +311,25 @@ img {vertical-align: middle;}
         padding: 20px;
     }
 
-    #pics, #pics2, #capt, #capt2 {
+    #pics, #pics2{
         display: flex;
         align-items: center;
         margin-left: 200px;
         gap: 15px;
     }
+    #capt{
+        display: flex;
+        align-items: center;
+        margin-left: 250px;
+        gap: 130px;
+    }
+    #capt2{
+        display: flex;
+        align-items: center;
+        margin-left: 250px;
+        gap: 150px;
+    }
+    
 
     #skilhead {
         padding-left: 0;
